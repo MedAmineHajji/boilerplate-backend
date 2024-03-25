@@ -1,6 +1,13 @@
 ignores:
     - "sonarqube-scanner"
     - "@nestjs/platform-express"
+    - "@nestjs/jwt"
+    - "@nestjs/passport"
+    - "@nestjs/swagger"
+    - "bcrypt"
+    - "moment"
+    - "passport"
+    - "passport-jwt"
     - "class-transformer"
     - "@nestjs/mapped-types"
     - js-yaml

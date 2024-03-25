@@ -23,6 +23,7 @@
     "pre-commit:format": "prettier -c \"src/*.ts\" \"test/*.ts\"",
     "pre-commit:spell": "cspell --no-issues **/*.{ts,js,json,md,yaml,yml}",
     "pre-commit:depcheck": "depcheck",
+    "prettier:write": "prettier --write test/app.e2e-spec.ts",
     "sonar": "node sonar-analysis.js",
     "test-cspell": "cspell"
   },
