@@ -1,0 +1,30 @@
+ignores:
+    - "sonarqube-scanner"
+    - "@nestjs/platform-express"
+    - "class-transformer"
+    - "@nestjs/mapped-types"
+    - js-yaml
+    - "@nestjs/schematics"
+    - "@types/express"
+    - "@types/jest"
+    - "@types/node"
+    - "@nestjs/config"
+    - cspell
+    - cspell-dict-de-de
+    - pre-commit
+    - ts-loader
+    - ts-node
+    - tsconfig-paths
+    - pg
+    - "@types/passport"
+    - pino-pretty
+    - source-map-support
+    - weak-napi
+    - long #somehow not found in a spec
+ignoreDirs:
+    - .nyc_output'
+    - "bitbucket-pipeline"
+    - "coverage"
+    - "node_modules"
+    - "dist"
+skip-missing: true

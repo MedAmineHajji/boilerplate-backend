@@ -1,0 +1,36 @@
+{
+    "version": "0.1",
+    "language": "en",
+    "ignorePaths": [
+        "src/config/**",
+        "README.md",
+        "nest-cli.json",
+        "sonar-analysis.js",
+        "node_modules/**",
+        ".idea/**",
+        ".nyc_output/**",
+        ".vscode/**",
+        "bitbucket-pipeline/**",
+        "coverage/**",
+        "package-lock.json",
+        "docker-compose.yaml",
+        "config/development.yaml",
+        "config/default.yaml",
+        "config/local.yaml",
+        "config/test.yaml",
+        "config/custom-environment-variables.yaml",
+        "package.json",
+        "cspell.json",
+        "tsconfig.json",
+        "tsconfig.compile.json",
+        "dist/**",
+        "docs/query-api.json",
+        "docs/command-api.json",
+        "bitbucket-pipelines.yml"
+    ],
+    "allowCompoundWords": false,
+    "dictionaries": ["en_US", "de-de", "softwareTerms", "node", "filetypes", "npm", "http"],
+    "ignoreWords": [
+        "typeorm"
+    ]
+}

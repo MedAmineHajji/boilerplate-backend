@@ -1,0 +1,29 @@
+name: Backend CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Docker image
+        run: docker build -t talent-testing-backend .
+
+      - name: Run Docker container
+        run: docker run -d --name my-nestjs-container -p 3000:3000 talent-testing-backend
